@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="hello.cpp" />
+    <ClCompile Include="LinearListTest.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="common.h" />
