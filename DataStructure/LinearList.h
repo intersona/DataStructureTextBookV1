@@ -1,7 +1,7 @@
 #pragma once
 #include <new>
 #include<iostream>
-#include<exception>
+#include "MyException.h"
 using namespace std;
 template <class T>
 //公式化描述的线性表
@@ -16,29 +16,13 @@ public:
 	LinearList<T>& Delete(int k, T& x);//删除第k个元素，并放入x
 	LinearList<T>& Insert(int k, const T& x);//在第k个元素后面插入x
 	void Output(ostream& out) const;
-	friend ostream& operator<<(ostream& out, const LinearList<T>& x);
+	template <class TT>
+	friend ostream& operator<<(ostream& out, const LinearList<TT>& x);
 
 private:
 	int length;
 	int MaxSize;
 	T* element;//一维动态数组
-};
-
-// 内存不足
-class NoMem {
-public:
-	NoMem() {}
-};
-// 使new引发NoMem异常而不是xalloc异常
-void my_new_handler()
-{
-	throw NoMem();
-};
-new_handler Old_Handler_ = set_new_handler(my_new_handler);
-//越界
-class OutOfBounds:exception {
-public:
-	OutOfBounds() { cout << "Out Of Bounds" << endl; }
 };
 
 template<class T>
@@ -50,7 +34,7 @@ LinearList<T>::LinearList(int MaxListSize)
 	length = 0;
 };
 template <class T>
-bool LinearList<T>::Find(int k,T& x) const
+bool LinearList<T>::Find(int k, T& x) const
 {
 	//把第k个元素取至x中
 	//如果不存在第k个元素则返回false，否则返回true
@@ -97,6 +81,7 @@ LinearList<T>& LinearList<T>::Insert(int k, const T& x)
 	{
 		element[i + 1] = element[i];
 	}
+	element[k] = x;
 	length++;
 	return *this;
 }
