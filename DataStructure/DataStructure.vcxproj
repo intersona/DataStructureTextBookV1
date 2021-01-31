@@ -146,6 +146,7 @@
     <ClCompile Include="MyException.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Array1D.h" />
     <ClInclude Include="Chain.h" />
     <ClInclude Include="LinearList.h" />
     <ClInclude Include="MyException.h" />

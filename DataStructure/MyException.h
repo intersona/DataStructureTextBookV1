@@ -14,3 +14,8 @@ class OutOfBounds :exception {
 public:
 	OutOfBounds() { cout << "Out Of Bounds" << endl; }
 };
+
+class BadInitializers :exception {
+public:
+	BadInitializers() { cout << "BadInitializers" << endl; }
+};
