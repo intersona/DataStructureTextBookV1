@@ -174,3 +174,22 @@ Array2D<T> Array2D<T>:: operator-(const Array2D<T>& m) const
 		w.row[i] = row[i] - m.row[i];
 	return w;
 }
+
+//乘法操作符
+template<class T>
+Array2D<T> Array2D<T>:: operator*(const Array2D<T>& m) const
+{// 矩阵乘，返回w = (*this) * m.
+	if (cols != m.rows) {
+		cout << "SizeMismatch" << endl;
+	}
+	// 创建存放结果的数组w
+	Array2D<T> w(rows, m.cols);
+	for (int i = 0; i < rows; i++)
+		for (int j = 0; j < m.cols; j++) {
+			T sum = (*this)[i][0] * m[0][j];
+			for (int k = 1; k < cols; k++)
+				sum += (*this)[i][k] * m[k][j];
+			w[i][j] = sum;
+		}
+	return w;
+}

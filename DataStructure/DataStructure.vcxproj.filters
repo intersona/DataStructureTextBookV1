@@ -44,7 +44,10 @@
     <ClInclude Include="Chain.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="Array1D.h">
+    <ClInclude Include="Array.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Matrix.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

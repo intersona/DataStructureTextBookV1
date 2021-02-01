@@ -146,9 +146,10 @@
     <ClCompile Include="MyException.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Array1D.h" />
+    <ClInclude Include="Array.h" />
     <ClInclude Include="Chain.h" />
     <ClInclude Include="LinearList.h" />
+    <ClInclude Include="Matrix.h" />
     <ClInclude Include="MyException.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
