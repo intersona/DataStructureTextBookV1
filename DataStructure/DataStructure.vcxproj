@@ -139,9 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Chain.cpp" />
     <ClCompile Include="ChainTest.cpp" />
-    <ClCompile Include="LinearList.cpp" />
     <ClCompile Include="LinearListTest.cpp" />
     <ClCompile Include="MyException.cpp" />
   </ItemGroup>
