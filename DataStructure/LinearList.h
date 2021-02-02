@@ -18,6 +18,8 @@ public:
 	void Output(ostream& out) const;
 	template <class TT>
 	friend ostream& operator<<(ostream& out, const LinearList<TT>& x);
+protected:
+	int GetMaxSize()const { return MaxSize; }
 
 private:
 	int length;

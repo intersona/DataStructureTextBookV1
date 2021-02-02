@@ -142,6 +142,9 @@
     <ClCompile Include="ChainTest.cpp" />
     <ClCompile Include="LinearListTest.cpp" />
     <ClCompile Include="MyException.cpp" />
+    <ClCompile Include="StackOfChain.cpp" />
+    <ClCompile Include="StackOfFormula.cpp" />
+    <ClCompile Include="UseOfStack.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Array.h" />
@@ -149,6 +152,8 @@
     <ClInclude Include="LinearList.h" />
     <ClInclude Include="Matrix.h" />
     <ClInclude Include="MyException.h" />
+    <ClInclude Include="StackOfChain.h" />
+    <ClInclude Include="StackOfFormula.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

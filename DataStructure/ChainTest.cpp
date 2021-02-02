@@ -1,7 +1,7 @@
 #include<iostream>
 #include"Chain.h"
 using namespace std;
-int main()
+int test()
 {
 	Chain<int> C;
 	C.Insert(0, 1);
@@ -18,5 +18,5 @@ int main()
 	cout << "x = " << x << endl;
 	C.Erase();
 	cout << "C = " << C << endl;
-
+	return 0;
 }
