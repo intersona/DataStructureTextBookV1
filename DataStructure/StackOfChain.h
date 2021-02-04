@@ -1,7 +1,7 @@
 #pragma once
 #include "Chain.h"
 using namespace std;
-/*
+
 template<class T>
 class DerivedLinkedStack :
     private Chain<T>
@@ -39,6 +39,8 @@ bool DerivedLinkedStack<T>::IsFull() const
     catch (NoMem) { return true; }
 }
 
+template<class T>
+class LinkedStack;
 //自定义链表形式的堆栈
 template <class T>
 class Node {
@@ -108,4 +110,4 @@ LinkedStack<T>& LinkedStack<T>::Delete(T& x)
     top = top->link;
     delete p;
     return *this;
-}*/
+}

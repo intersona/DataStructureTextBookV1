@@ -30,7 +30,10 @@
     <ClCompile Include="StackOfChain.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="UseOfStack.cpp">
+    <ClCompile Include="PrintMatchedPairs.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TowersOfHanoi.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
