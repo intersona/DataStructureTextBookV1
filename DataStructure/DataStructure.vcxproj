@@ -153,6 +153,7 @@
     <ClInclude Include="LinearList.h" />
     <ClInclude Include="Matrix.h" />
     <ClInclude Include="MyException.h" />
+    <ClInclude Include="Queue.h" />
     <ClInclude Include="StackOfChain.h" />
     <ClInclude Include="StackOfFormula.h" />
   </ItemGroup>
