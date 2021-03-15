@@ -18,6 +18,7 @@ public:
         T x;
         Find(1, x);
         return x;
+        //asdasdasdasdasd
     }
     DerivedLinkedStack<T>& Add(const T& x)
     {
